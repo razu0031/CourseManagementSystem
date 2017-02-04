@@ -1,0 +1,22 @@
+Id	Department	Year		Sem		Section
+Id	FId		Time		Day		CourseName	RoomNo 		Teacher
+
+8:00-8:50	8:50-9:40	9:40-10:30	10:30-11:20	11:20-12:10
+12:10-1:00	1:00-1:50	1:50-2:40	2:40-3:30	3:30-4:20
+4:20-5:10
+
+this.listBox55.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox55.FormattingEnabled = true;
+            this.listBox55.ItemHeight = 12;
+            this.listBox55.Location = new System.Drawing.Point(652, 265);
+            this.listBox55.Name = "listBox55";
+            this.listBox55.Size = new System.Drawing.Size(59, 43);
+            this.listBox55.TabIndex = 73;
+
+string[] groupArray = new string[] { "Group1",    "Group2",     
+				     "Group1+2",  "Group1/2"
+                                   };
+
+3,70		   
+	739,467
+		  1356,723

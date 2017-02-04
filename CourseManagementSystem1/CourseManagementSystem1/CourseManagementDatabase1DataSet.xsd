@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CourseManagementDatabase1DataSet" targetNamespace="http://tempuri.org/CourseManagementDatabase1DataSet.xsd" xmlns:mstns="http://tempuri.org/CourseManagementDatabase1DataSet.xsd" xmlns="http://tempuri.org/CourseManagementDatabase1DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DepartmentTableCourseManagementDatabase1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DepartmentTableCourseManagementDatabase1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CourseManagementSystem1.Properties.Settings.GlobalReference.Default.DepartmentTableCourseManagementDatabase1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DepartmentTable1TableAdapter" GeneratorDataComponentClassName="DepartmentTable1TableAdapter" Name="DepartmentTable1" UserDataComponentName="DepartmentTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DepartmentTableCourseManagementDatabase1ConnectionString (Settings)" DbObjectName="dbo.DepartmentTable1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DepartmentShortName FROM dbo.DepartmentTable1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DepartmentShortName" DataSetColumn="DepartmentShortName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CourseManagementDatabase1DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CourseManagementDatabase1DataSet" msprop:Generator_UserDSName="CourseManagementDatabase1DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DepartmentTable1" msprop:Generator_TableClassName="DepartmentTable1DataTable" msprop:Generator_TableVarName="tableDepartmentTable1" msprop:Generator_TablePropName="DepartmentTable1" msprop:Generator_RowDeletingName="DepartmentTable1RowDeleting" msprop:Generator_RowChangingName="DepartmentTable1RowChanging" msprop:Generator_RowEvHandlerName="DepartmentTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DepartmentTable1RowDeleted" msprop:Generator_UserTableName="DepartmentTable1" msprop:Generator_RowChangedName="DepartmentTable1RowChanged" msprop:Generator_RowEvArgName="DepartmentTable1RowChangeEvent" msprop:Generator_RowClassName="DepartmentTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DepartmentShortName" msprop:Generator_ColumnVarNameInTable="columnDepartmentShortName" msprop:Generator_ColumnPropNameInRow="DepartmentShortName" msprop:Generator_ColumnPropNameInTable="DepartmentShortNameColumn" msprop:Generator_UserColumnName="DepartmentShortName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
